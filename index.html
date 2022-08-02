@@ -4,22 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Кульчицький Михайло Йосипович, Михайло Кульчицький, заслужений майстер, фігури, каплички, купола">
+    <meta name="author" content="bohdan kulcyckyj">
+    <meta name="description" content="Кульчицький Михайло Йосипович - заслужений майстер народної творчості України. Виготовляємо фігури, каплички та купола.">
+    <link rel="icon" type="image/svg" href="./assets/webicon.svg">
     <link rel="stylesheet" href="style.css">
-    <title>BRUH</title>
+    <title>Кульчицький Михайло Йосипович</title>
 </head>
 <body>
 
-    <header>Header</header>
+    <header>
+        <div class="header-container">
+            <div id="logo-container">
+                <img id="logo" src="./assets/logo.svg" alt="logo">
+            </div>
+            <nav id="top-navigation">
+                <ul>
+                    <li>
+                        <span class="nav-link" onclick="navigateSmooth('#landing-section')">про мене</span>
+                    </li>
 
-    <section id="landing-section">Landing</section>
+                    <li>
+                        <span class="nav-link" onclick="navigateSmooth('#works-section')">роботи</span>
+                    </li>
 
-    <section id="service-section">Services</section>
+                    <li>
+                        <span class="nav-link" onclick="navigateSmooth('#contact-section')">контакт</span>
+                    </li>
+                </ul>
+            </nav>
+            <div id="menu-btn-container">
+                <div id="menu-btn"></div>
+            </div>
+        </div>
+    </header>
 
-    <section id="works-section">Works</section>
+    <section id="landing-section">
+        <img src="./assets/landing-img.png" alt="sculptors workspace">
+        <div class="text-container">
+            <h1>Кульчицький Михайло Йосипович</h1>
+            <div class="line"></div>
+            <p>Заслужений майстер народної творчості України</p>
+        </div>
+    </section>
 
-    <section id="contact-section">Contant</section>
+    <section id="works-section">
+        <div class="works-section-container"></div>
+        <div class="works-pagination"></div>
 
-    <footer>Footer</footer>
-    
+        <div class="works-gallery">
+            <div class="works-gallery-container">
+                <p id="close-gallery">x</p>
+                <p id="prev">&lt</p>
+                <img id="curr-gallery-img" src="./assets/works/img1.jpg" alt="work">
+                <p id="next">&gt</p>
+            </div>
+            <div class="gallery-pagination-container">
+                <p id="gallery-pagination"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <div class="contact-section-container">
+            <p>Виготовляємо фігури, каплички та купола.</p>
+            <p>З питаннями та замовленнями звертайтеся <strong>по телефону</strong></p>
+            <a href="tel:+380973817165"><img src="./assets/phone-icon.svg" alt="phone icon" /><strong>+38 097 381 71 65</strong></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>© Copyright <span id="copyright-year">2022</span> <a href="https://bohdankulcyckyj.github.io/portfolio">Bohdan Kulčyckyj</a>. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="./script.js"></script>
+    <script src="./gallery.js"></script>
 </body>
 </html>
