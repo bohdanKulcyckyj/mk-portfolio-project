@@ -38,7 +38,7 @@ const handleMobileMenu = () => {
 document.querySelector("#logo").addEventListener("click", () => {
     //location.reload();
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-    handleMobileMenu();
+    //handleMobileMenu();
 });
 
 menuBtn.addEventListener("click", handleMobileMenu);
