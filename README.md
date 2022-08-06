@@ -7,7 +7,7 @@ Link [here](https://www.mykhailo-kulchytskyi.pp.ua/).
 ## Process
 
 1. writing down core concept
-2. creating complete design included logo
+2. creating complete design including logo
 3. coding website
 4. deploying website
 
