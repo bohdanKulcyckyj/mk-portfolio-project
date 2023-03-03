@@ -1,0 +1,20 @@
+#contact-section {
+    background-color: $secondary-color-lighter;
+    padding: 3rem 0;
+}
+
+.contact-section-container {
+    text-align: center;
+    p, strong {
+        display: block;
+        margin: 0 0 30px;
+    }
+    a {
+        color: $secondary-color;
+        text-decoration: none;
+        & strong {
+            display: inline;
+            margin-left: 6px;
+        }
+    }
+}
