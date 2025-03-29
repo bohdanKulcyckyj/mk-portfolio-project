@@ -20,25 +20,17 @@ const handleMobileMenu = () => {
     const nav = document.querySelector('#top-navigation');
     if(window.innerWidth <= 880) {
         if(!menuOpen) {
-            menuBtn.classList.add("open");
-            nav.style.top = '0';
-            nav.style.right = '0';
+            nav.classList.add("open");
+            nav.classList.remove("close");
             menuOpen = true;
         } else {
-            nav.style.top = '-1000%';
             menuOpen = false;
-            menuBtn.classList.remove("open");
+            nav.classList.remove("open");
+            nav.classList.add("close");
         }
         return;
     }
     return;
 }
-
-
-document.querySelector("#logo").addEventListener("click", () => {
-    //location.reload();
-    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-    //handleMobileMenu();
-});
 
 menuBtn.addEventListener("click", handleMobileMenu);

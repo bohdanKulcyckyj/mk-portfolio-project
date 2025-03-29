@@ -7,14 +7,19 @@
     text-align: center;
     p, strong {
         display: block;
-        margin: 0 0 30px;
+        margin: 0 0 16px;
     }
     a {
         color: $secondary-color;
         text-decoration: none;
+        img {
+            width: auto;
+            height: 1.4rem;
+        }
         & strong {
             display: inline;
             margin-left: 6px;
+            font-weight: 700;
         }
     }
 }
