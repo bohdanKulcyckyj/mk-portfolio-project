@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,25 @@
     <meta name="google-site-verification" content="5oSoKrmUzyuJDajRPLye4z7aYSowucO1YJZ1KnEWLcQ" />
     <meta name="keywords" content="Кульчицький Михайло Йосипович, фігури, каплички, купола, заслужений майстер">
     <meta name="author" content="bohdan kulcyckyj">
-    <meta name="description" content="Кульчицький Михайло Йосипович - заслужений майстер народної творчості України. Виготовляємо фігури, каплички та купола.">
+    <meta name="description"
+        content="Кульчицький Михайло Йосипович - заслужений майстер народної творчості України. Виготовляємо фігури, каплички та купола.">
     <link rel="icon" type="image/svg" href="./assets/webicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css">
     <title>Каплички, фігури - Кульчицький М. Й.</title>
 </head>
+
 <body>
 
     <header>
         <div class="header-container">
-            <div id="logo-container">
+            <!-- <div id="logo-container">
                 <img id="logo" src="./assets/logo.svg" alt="logo">
-            </div>
+            </div> -->
             <nav id="top-navigation">
                 <ul>
                     <li>
@@ -26,7 +34,7 @@
                     </li>
 
                     <li>
-                        <span class="nav-link" onclick="navigateSmooth('#works-section')">роботи</span>
+                        <span class="nav-link" onclick="navigateSmooth('#works-section')">мої роботи</span>
                     </li>
 
                     <li>
@@ -52,17 +60,103 @@
     <section id="works-section">
         <div class="works-section-container"></div>
         <div class="works-pagination"></div>
+    </section>
 
-        <div class="works-gallery">
-            <div class="works-gallery-container">
-                <p id="close-gallery">x</p>
-                <p id="prev">&lt</p>
-                <img id="curr-gallery-img" src="./assets/works/img1.jpg" alt="work">
-                <p id="next">&gt</p>
+    <section class="container">
+        <div id="carouselExampleControlsNoTouching" class="works-gallery carousel slide" data-bs-touch="false">
+            <div class="works-gallery-container carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/works/img1.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img2.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img3.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img4.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img5.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img6.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img7.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img8.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img9.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img10.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img11.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img12.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img13.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img14.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img15.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img16.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img17.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img18.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img19.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img20.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img21.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img22.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img23.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img24.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img25.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img26.jpg" class="d-block w-100" alt="капличкa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/works/img27.jpg" class="d-block w-100" alt="капличкa">
+                </div>
             </div>
-            <div class="gallery-pagination-container">
-                <p id="gallery-pagination"></p>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 
@@ -70,13 +164,15 @@
         <div class="contact-section-container">
             <strong>Виготовляємо фігури, каплички та купола.</strong>
             <p>З питаннями та замовленнями звертайтеся по телефону</p>
-            <a href="tel:+380973817165"><img src="./assets/phone-icon.svg" alt="phone icon" /><strong>+38 097 381 71 65</strong></a>
+            <a href="tel:+380973817165"><img src="./assets/phone-icon.svg" alt="phone icon" /><strong>+38 097 381 71
+                    65</strong></a>
         </div>
     </section>
 
     <footer>
         <div class="footer-container">
-            <p>© Copyright <span id="copyright-year">2022</span> <a href="https://bohdankulcyckyj.github.io/portfolio">Bohdan Kulčyckyj</a>. All rights reserved.</p>
+            <p>© Copyright <span id="copyright-year">2022</span> <a
+                    href="https://bohdankulcyckyj.github.io/portfolio">Bohdan Kulčyckyj</a>. All rights reserved.</p>
         </div>
     </footer>
 
