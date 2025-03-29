@@ -1,3 +1,3 @@
 # Sculptor's landing page
 
-Link [here](mikhailo-kulchytskyi.netlify.app/).
+Link [here](https://www.mikhailo-kulchytskyi.netlify.app/).
