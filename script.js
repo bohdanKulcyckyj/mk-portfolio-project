@@ -17,28 +17,23 @@ const navigateSmooth = (id) => {
 }
 
 const handleMobileMenu = () => {
+    console.log("hej")
     const nav = document.querySelector('#top-navigation');
     if(window.innerWidth <= 880) {
         if(!menuOpen) {
+            nav.classList.add("open");
+            nav.classList.remove("close");
             menuBtn.classList.add("open");
-            nav.style.top = '0';
-            nav.style.right = '0';
             menuOpen = true;
         } else {
-            nav.style.top = '-1000%';
             menuOpen = false;
+            nav.classList.remove("open");
+            nav.classList.add("close");
             menuBtn.classList.remove("open");
         }
         return;
     }
     return;
 }
-
-
-document.querySelector("#logo").addEventListener("click", () => {
-    //location.reload();
-    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-    //handleMobileMenu();
-});
 
 menuBtn.addEventListener("click", handleMobileMenu);

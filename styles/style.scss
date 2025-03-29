@@ -1,0 +1,94 @@
+/*=======================================*/
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+/*=======================================*/
+/* Variables */
+$secondary-color: #979FBA;
+$secondary-color-lighter: rgba(151, 159, 186, 0.12);
+$primary-color: #FFFFFF;
+
+$primary-font: "Inter", Verdana, sans serif;
+$secondary-font: "Roboto", Verdana, sans serif;
+/*=======================================*/
+/* Global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    font-size: 20px;
+    color: $secondary-color;
+    background-color: $primary-color;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: $secondary-font;
+    font-weight: 500;
+
+    @media only screen and (max-width: 880px) {
+        font-size: 25px;
+    }
+
+    @media only screen and (max-width: 640px) {
+        font-size: 20px;
+    }
+}
+
+p, a {
+    font-size: 18px;
+    font-family: $primary-font;
+    font-weight: 300;
+
+    @media only screen and (max-width: 880px) {
+        font-size: 17px;
+    }
+
+    @media only screen and (max-width: 640px) {
+        font-size: 16px;
+    }
+}
+
+strong {
+    font-size: 18px;
+    font-family: $primary-font;
+
+    @media only screen and (max-width: 880px) {
+        font-size: 17px;
+    }
+
+    @media only screen and (max-width: 640px) {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    h1 {
+        padding: 0 20px; 
+    }
+    p {
+        padding: 0 20px;
+    }
+    p, a {
+        font-size: 16px;
+    }
+}
+
+/*=======================================*/
+/* Components */
+@import "./components/header";
+@import "./components/landing";
+@import "./components/works";
+@import "./components/contact";
+@import "./components/footer";

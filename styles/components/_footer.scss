@@ -1,0 +1,17 @@
+footer {
+    padding: 1.6rem;
+    background-color: $secondary-color;
+}
+
+.footer-container {
+    p {
+        text-align: center;
+        color: $primary-color;
+        font-size: 14px;
+    }
+    a {
+        font-size: 14px;
+        color: $primary-color;
+        text-decoration: none;
+    }
+}
