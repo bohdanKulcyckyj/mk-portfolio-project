@@ -95,9 +95,14 @@
         cursor: pointer;
         color: lighten($secondary-color, 20%);
     }
-    img {
+
+    &__image-container{
         height: 100%;
         margin: 0 30px;
+    }
+
+    img {
+        height: 100%;
     }
     #prev, #next {
         width: 40px;
@@ -138,8 +143,12 @@
         padding: 0 1.5rem;
     }
     .works-gallery {
-        img {
-            margin-top: 50px;
+        &__image-container{
+            padding: 40px 0 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         #prev {
             position: absolute;
@@ -169,8 +178,6 @@
             width: 100%;
             height: auto;
             max-height: 90vh;
-            margin: 0;
-            margin-top: 50px;
             object-fit: cover;
         }
     }
@@ -186,8 +193,6 @@
             width: 100%;
             height: auto;
             max-height: 90vh;
-            margin: 0;
-            margin-top: 50px;
             object-fit: cover;
         }
     }
