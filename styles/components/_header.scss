@@ -10,6 +10,7 @@ header {
     font-family: "Kanit", Verdana, sans-serif;
     z-index: 10001;
     background-color: #fffffff9;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
@@ -51,52 +52,58 @@ header {
         }
     }
     #menu-btn-container {
-        position: relative;
-        display: none;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        transition: all 0.5s ease-in-out;
-        z-index: 10000;
-        transform: scale(70%);
-        #menu-btn {
-          width: 40px;
-          height: 3px;
+      position: relative;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      width: 35px; // 50px * 0.7
+      height: 35px; // 50px * 0.7
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      z-index: 10000;
+      
+      #menu-btn {
+          width: 28px; // 40px * 0.7
+          height: 2.1px; // 3px * 0.7
           background: $secondary-color;
-          border-radius: 5px;
+          border-radius: 3.5px; // 5px * 0.7
           transition: all 0.5s ease-in-out;
+          
           &::before,
           &::after {
-            content: "";
-            position: absolute;
-            width: 40px;
-            height: 3px;
-            background: $secondary-color;
-            border-radius: 5px;
-            transition: all 0.5s ease-in-out;
+              content: "";
+              position: absolute;
+              width: 28px; // 40px * 0.7
+              height: 2.1px; // 3px * 0.7
+              background: $secondary-color;
+              border-radius: 3.5px; // 5px * 0.7
+              transition: all 0.5s ease-in-out;
           }
+          
           &::before {
-            transform: translateY(-14px);
+              transform: translateY(-9.8px); // -14px * 0.7
           }
+          
           &::after {
-            transform: translateY(14px);
+              transform: translateY(9.8px); // 14px * 0.7
           }
-        }
-        &.open {
+      }
+      
+      &.open {
           #menu-btn {
-            transform: translateX(-50px);
-            background: transparent;
-            &::before {
-              transform: rotate(45deg) translate(35px, -35px);
-            }
-            &::after {
-              transform: rotate(-45deg) translate(35px, 35px);
-            }
+              transform: translateX(-35px); // -50px * 0.7
+              background: transparent;
+              
+              &::before {
+                  transform: rotate(45deg) translate(24.5px, -24.5px); // (35px * 0.7)
+              }
+              
+              &::after {
+                  transform: rotate(-45deg) translate(24.5px, 24.5px); // (35px * 0.7)
+              }
           }
-        }
-    }
+      }
+  }  
 }
 
 @media only screen and (max-width: 1260px) {
@@ -107,53 +114,11 @@ header {
 
 @media only screen and (max-width: 880px) {
     header {
-        padding: 0.5rem 2rem;
+        padding: 0.6rem 1rem;
     }
     .header-container {
         justify-content: space-between;
-        #top-navigation {
-          position: absolute;
-          top: -1500%;
-          //right: -1000%;
-          width: 100vw;
-          height: 100vh;
-          background-color: $primary-color;
-          padding: 1rem;
-          transition: all 0.8s ease;
-          ul {
-            height: 80%;
-            flex-direction: column;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            li {
-              margin-bottom: 1.5rem;
-              .nav-link {
-                font-size: 1.6rem;
-              }
-            }
-          }
-        }
-        #menu-btn-container {
-          display: flex;
-        }
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    header {
-        padding: 0.5rem 1rem;
-    }
-    .header-container {
-      h1 {
-        padding: 0 20px; 
-      }
-        p {
-            padding: 0 20px;
-        }
-        p, a {
-            font-size: 22px;
-        }
+        flex-direction: row-reverse;
         #top-navigation {
           position: absolute;
           width: 100vw;
@@ -179,6 +144,39 @@ header {
           }
 
           ul {
+            height: 80%;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li {
+              margin-bottom: 1.5rem;
+              .nav-link {
+                font-size: 1.6rem;
+              }
+            }
+          }
+        }
+        
+        #menu-btn-container {
+          display: flex;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .header-container {
+      h1 {
+        padding: 0 20px; 
+      }
+        p {
+            padding: 0 20px;
+        }
+        p, a {
+            font-size: 22px;
+        }
+        #top-navigation {
+          ul {
             height: 100%;
             flex-direction: column;
             li {
@@ -191,11 +189,5 @@ header {
         #menu-btn-container {
           display: flex;
         }
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    header {
-        padding: 0.5rem 1rem;
     }
 }

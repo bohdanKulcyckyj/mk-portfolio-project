@@ -17,16 +17,19 @@ const navigateSmooth = (id) => {
 }
 
 const handleMobileMenu = () => {
+    console.log("hej")
     const nav = document.querySelector('#top-navigation');
     if(window.innerWidth <= 880) {
         if(!menuOpen) {
             nav.classList.add("open");
             nav.classList.remove("close");
+            menuBtn.classList.add("open");
             menuOpen = true;
         } else {
             menuOpen = false;
             nav.classList.remove("open");
             nav.classList.add("close");
+            menuBtn.classList.remove("open");
         }
         return;
     }
